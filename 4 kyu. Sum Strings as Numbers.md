@@ -1,4 +1,4 @@
-Description:
+###Description:
 
 Given the string representations of two integers, return the string representation of the sum of those integers.
 
@@ -10,7 +10,7 @@ sumStrings('1','2') // => '3'
 
 A string representation of an integer will contain no characters besides the ten numerals "0" to "9".
 
-Test Cases:
+###Test Cases:
 
 ```javascript
 function msg(a,b) {
@@ -39,7 +39,7 @@ t('50095301248058391139327916261',
   '131151201344081895336534324866')
 ```
 
-My solution:
+###My solution:
 ```javascript
 function sumStrings(a,b) {
   return a >= 9007199254740992 - 1 || b >= 9007199254740992 - 1 ? bigInt(a,b) : (a*1 + b*1) + '';
